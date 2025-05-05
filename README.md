@@ -31,9 +31,9 @@ Vsaka testna datoteka (`test_*.py`) vključuje:
      run: |
        curl -o tests.py https://raw.githubusercontent.com/IME-UPORABNISKEGA-RACUNA/IME-TEGA-REPOZITORIJA/main/test_projekt1.py
 
-   - name: Zaženi teste
-     run: |
-       pytest tests.py --disable-warnings -v
+   - name: Zazeni vse teste
+     run: pytest tests.py --disable-warnings -v
+     continue-on-error: true
    - name: Naloži rezultate
      uses: actions/upload-artifact@v4
      with:
