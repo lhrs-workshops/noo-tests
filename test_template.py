@@ -6,7 +6,7 @@ import atexit
 
 # ============================ DO NOT MODIFY ============================
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__))))
-file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'odgovori.json'))
+file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'results.json'))
 def hash_answer(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
 def write_grade_summary():
