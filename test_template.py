@@ -62,7 +62,7 @@ def test_is_even():
         raise
 
 def test_q1():
-    q1_hash = "7c24674b754ce14cc94b6034c41b13278a344c9c5c4e194625a6dc711a66c26d"
+    q1_hash = "87b0d0175e1ee6134da981c2118695824b1d7073e81c9f358b8dcbfc8cbea847"
     try:
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
@@ -74,7 +74,7 @@ def test_q1():
         raise
 
 def test_q2():
-    q2_hash = "0a0261cd58c6f631f39441598f69f0506e56e8442cd89f453d5e68c1d6dbe193"
+    q2_hash = "0bc4c9fd80ef53c294f056451fae3fae433e6274cb710598d5963b5a367d1b1b"
     try:
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
