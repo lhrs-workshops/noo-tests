@@ -67,6 +67,7 @@ def test_q1():
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
+        print(data)
         print(data["q1"])
         print(hash_answer(data["q1"]))
         assert hash_answer(data["q1"]) == q1_hash
@@ -81,6 +82,7 @@ def test_q2():
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
+        print(data)
         print(data["q2"])
         print(hash_answer(data["q2"]))
         assert hash_answer(data["q2"]) == q2_hash
