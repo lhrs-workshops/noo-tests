@@ -9,15 +9,22 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__))))
 file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'results.json'))
 def hash_answer(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
+    
 def write_grade_summary():
-    # Calculate scores and write the grade summary (this assumes all tests have the same weight)
-    results["total_score"] = sum(results.values())
-    results["max_score"] = len([k for k in results if isinstance(results[k], bool)])
-    results["passed_tests"] = sum(results.values())
-    results["total_tests"] = len([k for k in results if isinstance(results[k], bool)])
+    # Extract only test-related boolean results
+    test_keys = [k for k, v in results.items() if isinstance(v, bool)]
+    passed = sum(results[k] is True for k in test_keys)
+    max_score = len(test_keys)
+
+    summary = {
+        "total_score": passed,
+        "max_score": max_score,
+        "breakdown": {k: results[k] for k in test_keys}
+    }
+
     try:
         with open("grade_summary.json", "w") as f:
-            json.dump(results, f, indent=2, sort_keys=True)
+            json.dump(summary, f, indent=2, sort_keys=True)
     except Exception as e:
         print(f"Failed to write grade summary: {e}")
 
@@ -27,7 +34,7 @@ def write_fallback_summary():
 
 def pytest_sessionfinish(session, exitstatus):
     write_grade_summary()
-# END OF DO NOT MODIFY THIS PART
+# ============================ DO NOT MODIFY END ========================
 
 # Import the student's code
 from student_code import square, is_even
