@@ -98,12 +98,12 @@ def test_q3():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q3"])
+        print(hash_answer(data["q3"]))
+        assert hash_answer(data["q3"]) == q1_hash
+        results["q3"] = True
     except:
-        results["q1"] = False
+        results["q3"] = False
         raise
 
 def test_q4():
@@ -113,12 +113,12 @@ def test_q4():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q2"])
-        print(hash_answer(data["q2"]))
-        assert hash_answer(data["q2"]) == q2_hash
-        results["q2"] = True
+        print(data["q4"])
+        print(hash_answer(data["q4"]))
+        assert hash_answer(data["q4"]) == q2_hash
+        results["q4"] = True
     except:
-        results["q2"] = False
+        results["q4"] = False
         raise
         
 
@@ -129,12 +129,12 @@ def test_q5():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q5"])
+        print(hash_answer(data["q5"]))
+        assert hash_answer(data["q5"]) == q1_hash
+        results["q5"] = True
     except:
-        results["q1"] = False
+        results["q5"] = False
         raise
 
 def test_q6():
@@ -144,12 +144,12 @@ def test_q6():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q2"])
-        print(hash_answer(data["q2"]))
-        assert hash_answer(data["q2"]) == q2_hash
-        results["q2"] = True
+        print(data["q6"])
+        print(hash_answer(data["q6"]))
+        assert hash_answer(data["q6"]) == q2_hash
+        results["q6"] = True
     except:
-        results["q2"] = False
+        results["q6"] = False
         raise
 
 def test_q7():
@@ -159,12 +159,12 @@ def test_q7():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q7"])
+        print(hash_answer(data["q7"]))
+        assert hash_answer(data["q7"]) == q1_hash
+        results["q7"] = True
     except:
-        results["q1"] = False
+        results["q7"] = False
         raise
         
 def test_q8():
@@ -174,12 +174,12 @@ def test_q8():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q8"])
+        print(hash_answer(data["q8"]))
+        assert hash_answer(data["q8"]) == q1_hash
+        results["q8"] = True
     except:
-        results["q1"] = False
+        results["q8"] = False
         raise
         
 def test_q9():
@@ -189,12 +189,12 @@ def test_q9():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q9"])
+        print(hash_answer(data["q9"]))
+        assert hash_answer(data["q9"]) == q1_hash
+        results["q9"] = True
     except:
-        results["q1"] = False
+        results["q9"] = False
         raise
         
 def test_q10():
@@ -204,12 +204,12 @@ def test_q10():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q10"])
+        print(hash_answer(data["q10"]))
+        assert hash_answer(data["q10"]) == q1_hash
+        results["q10"] = True
     except:
-        results["q1"] = False
+        results["q10"] = False
         raise
         
 def test_q11():
@@ -219,12 +219,12 @@ def test_q11():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q11"])
+        print(hash_answer(data["q11"]))
+        assert hash_answer(data["q11"]) == q1_hash
+        results["q11"] = True
     except:
-        results["q1"] = False
+        results["q11"] = False
         raise
         
 def test_q12():
@@ -234,12 +234,12 @@ def test_q12():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q12"])
+        print(hash_answer(data["q12"]))
+        assert hash_answer(data["q12"]) == q1_hash
+        results["q12"] = True
     except:
-        results["q1"] = False
+        results["q12"] = False
         raise
         
 def test_q13():
@@ -249,12 +249,12 @@ def test_q13():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q13"])
+        print(hash_answer(data["q13"]))
+        assert hash_answer(data["q13"]) == q1_hash
+        results["q13"] = True
     except:
-        results["q1"] = False
+        results["q13"] = False
         raise
         
 def test_q14():
@@ -264,12 +264,12 @@ def test_q14():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q14"])
+        print(hash_answer(data["q14"]))
+        assert hash_answer(data["q14"]) == q1_hash
+        results["q14"] = True
     except:
-        results["q1"] = False
+        results["q14"] = False
         raise
         
 def test_q15():
@@ -279,12 +279,12 @@ def test_q15():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q15"])
+        print(hash_answer(data["q15"]))
+        assert hash_answer(data["q15"]) == q1_hash
+        results["q15"] = True
     except:
-        results["q1"] = False
+        results["q15"] = False
         raise
         
 def test_q16():
@@ -294,12 +294,12 @@ def test_q16():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q16"])
+        print(hash_answer(data["q16"]))
+        assert hash_answer(data["q16"]) == q1_hash
+        results["q16"] = True
     except:
-        results["q1"] = False
+        results["q16"] = False
         raise
         
 def test_q17():
@@ -309,12 +309,12 @@ def test_q17():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q17"])
+        print(hash_answer(data["q17"]))
+        assert hash_answer(data["q17"]) == q1_hash
+        results["q17"] = True
     except:
-        results["q1"] = False
+        results["q17"] = False
         raise
         
 def test_q18():
@@ -324,12 +324,12 @@ def test_q18():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q18"])
+        print(hash_answer(data["q18"]))
+        assert hash_answer(data["q18"]) == q1_hash
+        results["q18"] = True
     except:
-        results["q1"] = False
+        results["q18"] = False
         raise
         
 def test_q19():
@@ -339,12 +339,12 @@ def test_q19():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q19"])
+        print(hash_answer(data["q19"]))
+        assert hash_answer(data["q19"]) == q1_hash
+        results["q19"] = True
     except:
-        results["q1"] = False
+        results["q19"] = False
         raise
         
 def test_q20():
@@ -354,12 +354,12 @@ def test_q20():
         with open(file_path, encoding="utf-8") as f:
             data = json.load(f)
         print(data)
-        print(data["q1"])
-        print(hash_answer(data["q1"]))
-        assert hash_answer(data["q1"]) == q1_hash
-        results["q1"] = True
+        print(data["q20"])
+        print(hash_answer(data["q20"]))
+        assert hash_answer(data["q20"]) == q1_hash
+        results["q20"] = True
     except:
-        results["q1"] = False
+        results["q20"] = False
         raise
 
         
