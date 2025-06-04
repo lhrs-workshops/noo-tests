@@ -196,7 +196,7 @@ def test_q9():
         raise
 
 def test_q10():
-    q10_hash = "8109b0cf8b49f7fa64aaeadb5ec32b690bd535b5a4fb9b266b587c73de67245a"
+    q10_hash = "a426d98b4fdc1cf0c7abdf4e98e47955f6e10806c4b179c9e3bf596f7f2c7f51"
     try:
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
@@ -331,7 +331,7 @@ def test_q18():
         raise
 
 def test_q19():
-    q19_hash = "dd47445dbdf488550f6b6024fccb26fd9642c07d263652124dfd0a9c62b0a090"
+    q19_hash = "523a0e3d23a1b1aece6ba89f4835dd5b9310bdcb8868742944a4b90858e839ca"
     try:
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
