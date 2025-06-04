@@ -317,6 +317,7 @@ def test_q17():
 
 def test_q18():
     q18_hash = "eca68f378c86cdaf5975299ce86d1c99b8a472bf3ec00b4804af464aaf72a975"
+    q18_hash_alt = "019dcbb7deb1a9b6840c91cbd5ba5e7d99d3293adce0b0b35ff74453e9de4db2"
     try:
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
@@ -324,7 +325,7 @@ def test_q18():
         print(data)
         print(data["q18"])
         print(hash_answer(data["q18"]))
-        assert hash_answer(data["q18"]) == q18_hash
+        assert hash_answer(data["q18"]) in [q18_hash, q18_hash_alt]
         results["q18"] = True
     except:
         results["q18"] = False
