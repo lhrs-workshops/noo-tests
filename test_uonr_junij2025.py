@@ -36,9 +36,6 @@ def pytest_sessionfinish(session, exitstatus):
     write_grade_summary()
 # ============================ DO NOT MODIFY END ========================
 
-# Import the student's code
-from student_code import square, is_even
-
 # Prepare grading dictionary
 results = {
     "q1": False,
