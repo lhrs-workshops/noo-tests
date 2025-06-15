@@ -120,7 +120,7 @@ def test_q4():
         
 
 def test_q5():
-    q1_hash = "19093b85033a762a28a4e8652ac83b0d298605d11f03bd6e0a351ce825044aec"
+    q1_hash = "1a704f88a7efb475925ce28270fb6d300c3d546544aa1080c16309b864f742a2"
     try:
         assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
         with open(file_path, encoding="utf-8") as f:
